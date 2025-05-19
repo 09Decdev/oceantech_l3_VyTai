@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /oct
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/quanlynhanvien?useSSL=false&serverTimezone=UTC
+    driverClassName: "com.mysql.cj.jdbc.Driver"
+    password: ${DB_PASSWORD}
+    username: ${DB_USERNAME}
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
